@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url(/assets/img/bg.jpg);
+    background-color: #B4A5A5;
 }
 
 a {
@@ -9,7 +9,7 @@ a {
 
 header {
     padding: 15px;
-    background-color: #0f0f0f;
+    background-color: #151515;
 }
 
 header h2 {
@@ -22,7 +22,7 @@ header h2 {
 
 .sidebar {
     width: 80px;
-    background-color: #ededed;
+    background-color: #3C415C;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -49,7 +49,7 @@ header h2 {
 .sidebar-menu li i {
     font-size: 24px;
     padding: 10px;
-    color: #F58840;
+    color: #B85252;
 }
 
 .sidebar-menu li span {
@@ -60,7 +60,7 @@ header h2 {
 
 .sidebar-menu li:hover i,
 .sidebar-menu li:hover span {
-    color: #373737;
+    color: #dadada;
 }
 
 section h3 {
