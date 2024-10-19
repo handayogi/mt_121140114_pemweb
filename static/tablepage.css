@@ -1,0 +1,42 @@
+/* Tablepage Style */
+.dummy-table-data {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.dummy-table-data th, td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.dummy-table-data tbody tr:nth-child(even) {
+    background-color: #ffcdcd;
+}
+
+.dummy-table-data tbody tr:nth-child(odd) {
+    background-color: #ffedd3;
+}
+
+.dummy-table-data tbody tr:hover {
+    background-color: #ffaaaa;
+}
+
+.dummy-table-data thead {
+    position: sticky;
+    top: 0;
+    background-color: #151515;
+    color: #fff;
+}
+
+.dummy-table-data tbody {
+    display: block;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.dummy-table-data thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png/img" href="./assets/img/logo/red-logo.png">
+    <title>Home</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    
+    <!-- Bootstrap Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+    <!-- Header dan Logo -->
+    <header class="d-flex justify-content-center">
+        <img src="./assets/img/logo/red-logo.png" alt="Logo" width="60" height="60">
+        <h2>Meliodas Wiki</h2>
+    </header>
+
+    <div class="row">
+        <!-- Sidebar kiri halaman -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Form</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="table.html">
+                        <i class="fas fa-list"></i>
+                        <span>List Data</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Main content -->
+            <div class="col-xl main-content">
+
+                <!-- Carousel -->
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/slide-carousel/slide1.jpg" class="d-block w-100" alt="Nanatsu no Taizai">
+                            <div class="carousel-caption d-none d-md-block bg-black" style="--bs-bg-opacity: .6;">
+                                <h5>Nanatsu no Taizai</h5>
+                                <p>Nanatsu no Taizai merupakan Ksatria Kerajaan Liones.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/slide-carousel/slide2.jpg" class="d-block w-100" alt="Meliodas">
+                            <div class="carousel-caption d-none d-md-block bg-black" style="--bs-bg-opacity: .6;">
+                                <h5>Meliodas</h5>
+                                <p>Meliodas "Captain" dari The Seven Deadly Sins (Nanatsu no Taizai).</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/slide-carousel/slide3.jpg" class="d-block w-100" alt="Meliodas Demon Form">
+                            <div class="carousel-caption d-none d-md-block bg-black" style="--bs-bg-opacity: .6;">
+                                <h5>Meliodas Assault Mode</h5>
+                                <p>Meliodas dengan demon form terkuatnya.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Navbar Content -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Content Menu</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#desc">Website Desc</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#item-1">Appearance</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#item-2">Personality</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#item-3">Abilities and Equipments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#item-4">Relationships</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Section Content -->
+                <section id="desc" class="p-3">
+                    <h3>Website Description</h3>
+                    <p>
+                        Website ini akan menjadi wiki sederhana yang didedikasikan untuk karakter anime Meliodas, sang kapten 
+                        dari kelompok The Seven Deadly Sins dalam seri Nanatsu no Taizai. Di dalamnya, pengunjung dapat menemukan 
+                        informasi lengkap mengenai latar belakang Meliodas, kekuatan, hubungan, serta perannya dalam dunia 
+                        Nanatsu no Taizai.
+                    </p>
+                </section>
+                <section id="item-1" class="p-3">
+                    <h3>Appearance</h3>
+                    <div class="card-container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img//appearance/meliodas.jpeg" class="card-img-top" alt="Meliodas Original Form">
+                            <div class="card-body">
+                              <p class="card-text">Outfit original Meliodas.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/appearance/meliodasxban.jpeg" class="card-img-top" alt="Meliodas x Ban">
+                            <div class="card-body">
+                              <p class="card-text">Meliodas dengan tubuh mungilnya yang sedang digendong oleh Ban.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/appearance/kingofliones.jpeg" class="card-img-top" alt="The King of Liones">
+                            <div class="card-body">
+                              <p class="card-text">Meliodas, setelah menjadi Raja Kerajaan Liones dan memiliki anak bernama Tristan dengan Elizabeth
+                                sebagai Ratu Liones atau Istrinya.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3">
+                        Meskipun berpenampilan seperti anak kecil, Meliodas jauh lebih tua, berusia lebih dari tiga ribu tahun. 
+                        Dia sangat pendek dibandingkan dengan karakter lain, dengan rambut pirang acak-acakan dan mata zamrud. 
+                        Dia juga tidak memiliki rambut wajah, yang semakin menonjolkan penampilannya yang seperti remaja. 
+                        Terlepas dari perawakannya dan penampilannya yang awet muda, dia relatif berotot, memiliki serangkaian 
+                        otot perut yang berkembang dengan baik. Dia sering mengenakan kemeja kancing depan putih bersih dan 
+                        rompi hitam tanpa lengan di atasnya dengan dasi yang longgar. Sarung Pedang Patahnya dipegang oleh sabuk 
+                        kulit hijau dengan gesper berwarna emas. Tanpa kaus kaki, dia mengenakan sepasang sepatu bot hitam. 
+                        Ciri khasnya yang paling khas adalah simbol Naga yang diukir di bagian atas bisep kirinya, tepat di 
+                        bawah bahunya.
+                    </p>
+                </section>
+                <section id="item-2" class="p-3">
+                    <h3>Personality</h3>
+                    <p>
+                        Meliodas adalah karakter yang sangat kaya akan kemampuan dan keterampilan. Ciri-ciri Meliodas yang 
+                        menonjol adalah kejujurannya dan keberaniannya yang luar biasa, yang ditunjukkan ketika ia tetap tenang 
+                        saat melihat Rust Knight yang kemudian diketahui sebagai Elizabeth Liones. Ia juga ditunjukkan sebagai 
+                        orang yang sangat cabul dan suka sering menceritakan lelucon. Ia juga memiliki rasa keadilan yang kuat dan 
+                        bersedia membantu orang yang sedang dalam kesulitan. Bahkan ketika ia terluka parah, ia berusaha untuk tidak 
+                        menunjukkan kelemahan dan tetap kuat di depan teman-temannya. Ia menyimpan dendam terhadap dirinya sendiri, 
+                        menganggap dirinya gagal sebagai kakak laki-laki bagi Zeldris karena penderitaan yang ditimbulkannya.
+                    </p>
+                    <div class="card-container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/personality/personality1.jpg" class="card-img-top" alt="Personality1">
+                            <div class="card-body">
+                              <p class="card-text">
+                                Personality Meliodas yang ditunjukkan sangat tenang, namun dapat menjadi iblis ketika teman-temannya 
+                                terluka.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/personality/personality2.jpg" class="card-img-top" alt="Personality2">
+                            <div class="card-body">
+                              <p class="card-text">
+                                Personality Meliodas saat menjadi iblis ketika teman-temannya terluka.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Meskipun ia dijuluki dengan <i>Sin's of Wraith</i> (dosa kemarahan), ia mempertahankan kesan sebagai orang yang sangat tenang.
+                        Namun, jika rekan-rekannya atau teman-temannya terluka dengan cara apa pun, ia terbukti mampu menjadi sangat marah. 
+                        Ia juga marah ketika seseorang mencoba mengambil pedangnya, kemarahan ini bahkan mampu menakuti seorang <i>Holy Knight</i>
+                        dan menyebabkannya meninggalkan bekas luka permanen di leher Ban, meskipun ia memiliki kemampuan regenerasi abadi.
+                        Telah diisyaratkan bahwa Meliodas merasa bersalah atas nasib Danafor, mengatakan bahwa dosanya adalah tidak dapat 
+                        menyelamatkan kerajaan. Ban dan Cain menunjukkan bahwa Meliodas cenderung lembut dan naif, karena ia tidak pernah 
+                        membunuh siapa pun, bahkan seseorang seperti Guila, yang merupakan ancaman serius bagi kelompok tersebut. Meliodas 
+                        tidak suka membunuh, lebih suka berbelas kasih.
+                    </p>
+                    <div class="card-container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/personality/personality3.jpg" class="card-img-top" alt="Personality3">
+                            <div class="card-body">
+                              <p class="card-text">
+                                Meliodas saat dalam mode Assault.  Ia menunjukkan kekuatan yang luar biasa ketika dalam mode ini, namun
+                                melahap emosi nya sendiri.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/img/personality/personality4.jpg" class="card-img-top" alt="Personality4">
+                            <div class="card-body">
+                              <p class="card-text">
+                                Meliodas saat dalam mode iblis biasa.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Meskipun demikian, kepribadian Meliodas dulunya jauh lebih gelap dan menakutkan, karena ia dipuja sebagai iblis paling 
+                        keji dan paling menakutkan yang pernah ada, tidak ada iblis lain yang berani menantang Meliodas ketika ia menjadi 
+                        pemimpin dari <i>Ten Commandments</i> dan pewaris takhta. Meskipun tidak banyak yang diperlihatkan tentang siapa dia, Meliodas 
+                        menunjukkan sikap kasar dan arogan terhadap iblis yang lebih rendah. Pada akhirnya Meliodas justru bertemu dengan seorang Dewi
+                        yang bernama Elizabeth dan jatuh cinta kepadanya. Sehingga membuatnya meninggalkan dunia Iblis demi Elizabeth dan memilih 
+                        untuk menghentikan perang yang tidak berarti itu. Setiap kali menggunakan Tanda Iblisnya, kepribadian Meliodas berubah menjadi 
+                        mirip dengan dirinya yang dulu, menjadi dingin, pendiam, kejam, dan suka membunuh saat ia membunuh dan menyerang siapa pun di 
+                        dekatnya tanpa ampun kecuali Elizabeth. Meskipun terkenal sebagai orang mesum, Tujuh Dosa Mematikan mengungkapkan bahwa Meliodas 
+                        tidak pernah menunjukkan ketertarikan terhadap wanita lain sebelum bertemu Elizabeth yang sudah dewasa.
+                    </p>
+                </section>
+                <section id="item-3" class="p-3">
+                    <h3>Abilities and Equipment</h3>
+                    <p>
+                        Kemampuan dan keahlian Meliodas dalam pertempuran sudah melegenda. Ia adalah kapten dari Tujuh Dosa Mematikan yang legendaris 
+                        dan saat ia menjadi anggota Klan Iblis, Meliodas pernah berkuasa sebagai pemimpin Sepuluh Perintah dan satu-satunya pewaris 
+                        takhta Raja Iblis yang layak, sangat ditakuti oleh musuh-musuh Klan Iblis dan bahkan iblis-iblis lainnya, dianggap sebagai 
+                        iblis terkuat kedua setelah Raja Iblis, begitu kuatnya sehingga iblis Gowther menyatakan pengkhianatannya saja menyebabkan 
+                        keseimbangan kekuatan antara Klan Dewi dan Iblis berpihak pada yang pertama dan memungkinkan mereka untuk memulai Perang Suci, 
+                        yang memaksa Gowther, sebagai upaya terakhir, untuk mengubah Mael, anggota terkuat Klan Dewi, menjadi Estarossa dari Klan 
+                        Iblis dalam upaya untuk mendapatkan kembali keunggulan atas Klan Dewi.
+                    </p>
+                    <p>
+                        Seperti semua anggota Klan Iblis, ia mampu memanifestasikan kekuatan kegelapan misterius mereka, yang dapat ia gunakan dan 
+                        ubah menjadi berbagai bentuk untuk berbagai keperluan, seperti membentuk sayap untuk terbang, menyembuhkan luka-lukanya 
+                        sendiri, menyambungkan kembali anggota tubuhnya, dan meningkatkan kemampuan fisik dan sihirnya. Ia juga memiliki pengetahuan 
+                        tentang sihir iblis. Ia paling terkenal karena keterampilannya menggunakan pedang dan kehebatan fisiknya, tetapi ia juga 
+                        memiliki kemampuan sihir yang luar biasa, terutama kekebalannya terhadap serangan sihir melalui kemampuannya <strong>Full Counter.</strong>
+                    </p>
+                    <h4>Abilities</h4>
+                    <ul>
+                        <li>
+                            <div class="full-counter-container">
+                                <p class="full-counter">
+                                    Full Counter「全反撃フルカウンター, Furukauntā」: Kemampuan ini memungkinkan Meliodas untuk memantulkan serangan
+                                    sihir yang ditujukan padanya kembali ke musuh dengan persentase kembalian 2x lipat lebih besar,
+                                    oleh karena itu, semakin kuat kekuatan lawan, pantulannya pun semakin kuat. Raja Iblis menyatakan 
+                                    bahwa teknik tersebut hanyalah tiruan dari teknik <strong>Chandler</strong> (Guru Meliodas) dan bahwa 
+                                    kekuatan sihir aslinya adalah sesuatu yang berbeda.
+                                    <div class="card-container">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="./assets/img/ability/ability1.gif" class="card-img-top" alt="Full Counter">
+                                            <div class="card-body">
+                                              <p class="card-text">
+                                                Full Counter.
+                                              </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hellblaze-container">
+                                <p class="hellblaze">
+                                    Hellblaze「獄炎ヘルブレイズ, Herubureizu; literally meaning "Hellfire"」: Kemampuan misterius yang ditunjukkan oleh Meliodas yang 
+                                    memungkinkannya menghasilkan api hitam. Teknik ini juga memiliki efek tambahan yaitu meniadakan regenerasi makhluk abadi, 
+                                    seperti yang ditunjukkan saat ia menggunakannya terhadap Ban.
+                                    <div class="card-container">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="./assets/img/ability/ability2.gif" class="card-img-top" alt="Hellblaze">
+                                            <div class="card-body">
+                                              <p class="card-text">
+                                                Hellblaze.
+                                              </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                Assault Mode「殲滅状態アサルトモード, Asaruto Mōdo」: Keadaan ini tercapai saat Meliodas melepaskan kekuatan iblisnya 
+                                secara maksimal, mencapai kekuatan yang luar biasa. Bentuk ini juga memungkinkan Meliodas untuk mengakses kekuatan penuhnya. 
+                                Menurut Melascula, pada masa ketika Meliodas memegang kendali atas <i>Ten Commandments</i>, bahkan mereka pun takut kepadanya saat 
+                                dalam mode ini. Kekurangannya adalah hal ini merampas semua perasaan dan emosi Meliodas untuk sementara, menyebabkannya 
+                                kembali seperti sebelum ia mengkhianati Klan Iblis.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Kami Chigiri「神かみ千斬ちぎり, Kami Chigiri; literally meaning "Thousand Divine Slayer"」: Meliodas menebas lawannya dengan pedangnya 
+                                sebanyak seribu kali dalam sekejap.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Trillion Dark「トリリオン・ダーク, Toririon Dāku」: Meliodas meluncurkan rentetan bola-bola kecil kegelapan berkonsentrasi tinggi ke arah lawan.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Dark Prominence「暗黒星ダークプロミネンス, Dāku Purominensu; literally meaning "Dark Star"」: Meliodas memasukkan kekuatan kegelapan ke dalam 
+                                pedangnya dan melancarkan tebasan dahsyat.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="item-4" class="p-3">
+                    <h3>Relationships</h3>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Elizabeth_Liones" target="_blank">Elizabeth Liones</a>
+                    <p>
+                        Meliodas dan Elizabeth memiliki hubungan yang penuh kasih, dengan Meliodas menikmati waktunya bercanda dan menggodanya.
+                        Namun, terlihat bahwa ia peduli dengan kelebihan Elizabeth dan menganggapnya sebagai seseorang yang penting baginya. Sejauh ini, 
+                        Elizabeth (bersama dengan pedangnya yang patah) adalah satu-satunya hal yang akan melampiaskan amarah Meliodas jika salah satunya 
+                        diambil atau dilukai. Meskipun mengamuk dan kehilangan kesadaran di Vaizel saat dalam keadaan iblis parsialnya, Elizabeth adalah 
+                        satu-satunya yang tidak terluka. Kepedulian Meliodas terhadap Elizabeth tumbuh hingga ia lebih marah pada penculikan Elizabeth 
+                        daripada pedangnya yang dicuri dan pergi ke Liones dengan kecepatan tinggi hanya untuk menyelamatkannya.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Hawk" target="_blank">Hawk</a>
+                    <p>
+                        Ia dan Hawk memiliki hubungan yang baik dan buruk. Meskipun mereka sering bertengkar, mereka tampaknya peduli satu sama lain. 
+                        Meliodas memiliki semacam kepercayaan terhadap Hawk karena ia memercayainya untuk melindungi atau mengawasi Elizabeth saat 
+                        Elizabeth pergi. Ketika Hawk tampaknya dibunuh oleh Hendrickson saat melindunginya, Meliodas sangat marah dan kesal pada Hendrickson 
+                        karena membunuh Hawk, menunjukkan bahwa Meliodas memang peduli pada Hawk.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Diane" target="_blank">Diane</a>
+                    <p>
+                        Meliodas dan Diane sama-sama anggota dari Seven Deadly Sins. Meskipun Diane adalah raksasa dan karena itu ukurannya sangat besar, 
+                        Meliodas masih memperlakukannya sebagai gadis biasa dan sangat mempercayainya sebagai bawahan. Dia menyatakan bahwa alasan dia tidak 
+                        meraba-raba Diane adalah karena dia tidak akan melakukan itu kepada seseorang yang begitu penting baginya, meskipun ini mungkin hanya 
+                        alasan dan untuk menghiburnya. Setiap kali Diane ingin diraba-raba seperti Elizabeth, Meliodas menunjukkan ekspresi kesal, tetapi pada 
+                        akhirnya, masih memperlakukannya seperti teman baik. Setelah melewati ujiannya dan mengetahui tentang kutukan Meliodas dan Elizabeth, 
+                        Meliodas menghibur Diane yang merasa bersalah karena tidak mengetahuinya, dan pada gilirannya, Diane menjadi semakin protektif dan 
+                        mendukungnya serta Elizabeth sebagai temannya.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Ban" target="_blank">Ban</a>
+                    <p>
+                        Meliodas dan Ban sama-sama anggota dari Seven Deadly Sins. Meliodas sangat bersahabat dengan Ban, dan mereka sering berkelahi. Mereka 
+                        sangat kompetitif dan senang menantang satu sama lain dalam adu panco. Meskipun menjadi sahabat karib, Meliodas mudah marah ketika Ban 
+                        mencoba mencuri pedangnya. Ketika Ban menerima permintaan dari Klan Dewi untuk membunuhnya, Meliodas kesal dengan sifat Ban yang sembrono 
+                        karena menerima ini, terutama selama situasi buruk mereka. Namun, begitu dia mengetahui alasan di balik ini, Meliodas menerima kematiannya 
+                        oleh Ban karena dia tahu bagaimana perasaannya dan mungkin akan melakukan hal yang sama jika dia berada dalam situasinya. Setelah masalah 
+                        mereka terselesaikan, Ban dan Meliodas kembali ke hubungan persahabatan mereka dan sangat menghormati satu sama lain. Setelah Ban bersatu 
+                        kembali dengan kekasihnya Elaine, Meliodas terbukti sangat bahagia untuk Ban, sedemikian rupa sehingga dia sekarang bercanda menggoda hubungan 
+                        mereka dengan cara yang sama seperti yang dilakukan Ban kepadanya dan Elizabeth. Keduanya bahkan terbukti saling bersaing dalam menentukan hubungan 
+                        siapa yang lebih baik dan siapa yang lebih menarik, seperti yang terlihat selama Arc Festival Besar, saat keduanya menghabiskan seluruh pertarungan 
+                        mereka dengan mendominasi lawan sambil berdebat tentang siapa yang lebih baik, Elizabeth atau Elaine. Persahabatan antara Meliodas dan Ban semakin 
+                        erat setelah Ban pergi ke Purgatory untuk menyelamatkan Meliodas. Meliodas senang, memiliki Ban sebagai teman di sisinya saat terjebak di Purgatory.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/King" target="_blank">King</a>
+                    <p>
+                        Meliodas dan King sama-sama merupakan anggota dari Seven Deadly Sins. Ketika King dilaporkan telah meninggal dan dikuburkan, Meliodas tidak tampak 
+                        terkejut, yang menunjukkan bahwa ia yakin dengan kekuatan King dan fakta bahwa ia tidak meninggal. Ketika King bergabung dengan kelompok tersebut, 
+                        Meliodas terlihat senang menindasnya untuk melakukan hal-hal yang tidak ia sukai. Misalnya, Meliodas memaksanya untuk bergabung dengan Vaizel Fight 
+                        Festival. Secara keseluruhan, King tampak sangat mempercayainya sebagai seorang teman dan kapten. Meliodas menyebutkan bahwa King seperti maskot dari 
+                        Deadly Sins, tidak diketahui apakah ia bersungguh-sungguh atau hanya bercanda.
+                    </p>
+                    <p>
+                        Namun, setelah mengetahui bahwa Meliodas adalah mantan anggota Klan Iblis dan kemudian mengetahui bahwa ia memiliki hubungan dengan Sepuluh Perintah, 
+                        King mulai mempertanyakan sifat aslinya dan apakah ia benar-benar berada di pihak mereka. Keraguan King terhadap kaptennya tampak semakin terbukti 
+                        ketika Meliodas menolak untuk menceritakan masa lalunya dan malah mempertanyakan gelarnya sebagai raja para Peri, yang membuat King cukup marah hingga 
+                        menyerang dan mencoba membunuh Meliodas dengan kemampuan Bencananya. Kemudian, King memutuskan untuk berada di pihak Meliodas karena Diane dan Ban 
+                        memercayainya, tetapi mengancam akan membunuhnya jika Meliodas memutuskan untuk mengkhianati mereka. Setelah melewati ujiannya dan mengetahui tentang 
+                        Meliodas serta kutukan Elizabeth, King tampaknya sepenuhnya memahami Meliodas dan memercayainya sekali lagi, dan bahkan sangat menyesali bagaimana dia 
+                        memperlakukan dan meragukan Meliodas sebelum kejadian ini, yang dimaafkan oleh Meliodas.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Gowther" target="_blank">Gowther</a>
+                    <p>
+                        Meliodas dan Gowther sama-sama anggota Seven Deadly Sins. Meskipun keduanya adalah anggota, Meliodas tampaknya memiliki hubungan yang bersahabat, 
+                        tetapi rumit dengan Gowther. Ketika mereka bersatu kembali setelah 10 tahun, Meliodas tampaknya sama sekali tidak mengenali penampilan asli Gowther, 
+                        menyatakan bahwa ia belum pernah melihatnya di luar baju besinya sebelumnya. Ini menyiratkan bahwa meskipun merekrutnya ke dalam dosa, Meliodas mungkin 
+                        tidak pernah melihat penampilan asli Gowther sampai mereka bersatu kembali bertahun-tahun kemudian. Terungkap kemudian bahwa Meliodas dan Gowther pernah 
+                        menjadi anggota Sepuluh Perintah 3.000 tahun yang lalu, namun, Gowther kehilangan ingatannya saat itu. Terungkap pula bahwa Meliodas tidak hanya menyadari 
+                        bahwa Gowther adalah boneka, dan masa lalunya sebagai salah satu Commandments, tetapi juga merupakan teman dekat penciptanya, tetapi tidak mengungkapkan 
+                        fakta ini kepada siapa pun, bahkan Gowther sendiri. Setelah Gowther mulai mendapatkan kembali ingatannya, Meliodas segera memerintahkan sisa dosa untuk 
+                        membantu Diane menghentikannya dari upaya menghapus ingatannya, menunjukkan keinginannya untuk membantu Gowther mendapatkan kembali ingatan dan emosinya 
+                        sekali lagi. Setelah mendapatkan kembali ingatan dan emosinya sekali lagi, rasa hormat dan keramahan Gowther terhadap Meliodas tampak lebih tulus dari 
+                        sebelumnya.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Merlin" target="_blank">Merlin</a>
+                    <p>
+                        Meliodas dan Merlin sama-sama anggota Seven Deadly Sins. Tidak banyak yang diketahui tentang hubungan mereka, tetapi Meliodas sangat terkejut ketika mengetahui 
+                        bahwa Merlin adalah orang yang menjatuhkannya sepuluh tahun lalu. Ketika keduanya akhirnya bersatu kembali setelah sepuluh tahun, Meliodas sedikit memusuhi 
+                        Merlin, percaya bahwa Merlin sedang merencanakan sesuatu, tetapi segera lupa untuk bertanya apa pun padanya karena Elizabeth. Akhirnya, terungkap bahwa Meliodas 
+                        telah mengenal Merlin paling lama di antara semua Deadly Sins, telah mengenalnya selama 3.000 tahun, dengan keduanya telah mengetahui tentang Perintah bahkan 
+                        sebelum kelompok tersebut terbentuk. Meliodas adalah satu-satunya yang menyadari ketergesaan Merlin untuk kembali ke Camelot serta lukanya dari pertemuannya 
+                        dengan Zeldris, menunjukkan perhatian padanya serta rasa ingin tahu mengapa ia sangat ingin kembali ke Camelot dan terkejut mengetahui bahwa alasannya adalah 
+                        karena ia ingin menemukan Raja Arthur, menunjukkan bahwa mereka berdua adalah teman dekat daripada yang terlihat.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Escanor" target="_blank">Escanor</a>
+                    <p>
+                        Meliodas dan Escanor sama-sama anggota dari Tujuh Dosa Mematikan. Meliodas sangat mengagumi Escanor, karena ia melihatnya sebagai yang terkuat dari semua dosa, 
+                        bahkan mengakui bahwa ia bisa lebih kuat dari Meliodas sendiri. Namun, Escanor tampaknya bergantung pada Meliodas, terutama pada malam hari, seperti yang 
+                        ditunjukkan ketika Meliodas menyeret Harta Karun Suci milik Meliodas. Meskipun Meliodas kesal dengan tangisan Escanor yang terus-menerus dan perilakunya yang 
+                        ragu, ia tetap mendorongnya untuk lebih percaya diri. Setelah mengetahui kutukan Meliodas, Escanor datang dan membacakan puisi tentang kutukannya dan Meliodas 
+                        dalam upaya untuk menghiburnya, karena ia mengerti bagaimana rasanya dikutuk. Meliodas sebagai balasannya menghargai usahanya dan berterima kasih padanya sambil 
+                        tersenyum. Pada malam hari, Escanor sangat menghormati kaptennya dan biasanya meminta maaf karena telah menjadi beban. Daytime Escanor juga menghormati Meliodas, 
+                        namun rasa hormatnya terhadap Meliodas sangat diremehkan oleh kesombongan dan kepercayaan dirinya terhadap kekuatannya.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Zeldris" target="_blank">Zeldris</a>
+                    <p>
+                        Zeldris adalah adik laki-laki Meliodas. Mereka pernah memiliki hubungan yang baik, seperti yang diungkapkan oleh emosi Meliodas kemudian bahwa Zeldris mengagumi 
+                        Meliodas sebagai pemimpin Sepuluh Perintah dan memahami bahwa dia sangat tulus dan jujur dan dia juga melatih Zeldris tentang cara bertarung. Pengkhianatannya 
+                        terhadap Klan Iblis membuat mereka terasing tetapi sementara Meliodas tidak membencinya tetapi tidak merasa ragu untuk melibatkannya, Zeldris sangat membenci 
+                        Meliodas, karena karena pengkhianatan Meliodas para Vampir mengkhianati Raja Iblis dan dia terpaksa berpisah dengan Gelda kekasih Zeldris. Oleh karena itu, 
+                        Meliodas dan Zeldris tidak ragu untuk saling berhadapan, bahkan Zeldris memulai serangan terhadap Meliodas dan sama sekali tidak peduli ketika Estarossa 
+                        membunuhnya, meskipun ini mungkin karena Zeldris menyadari bahwa Meliodas akan dibangkitkan.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Chandler" target="_blank">Chandler</a>
+                    <p>
+                        Chandler adalah mantan guru Meliodas. Tidak banyak yang diketahui tentang hubungan mereka saat mereka menjadi anggota Klan Iblis, tetapi bahkan setelah pengkhianatannya, 
+                        Chandler tetap sangat dekat dan menghormati Meliodas. Meliodas, meskipun menghormati mentornya karena kekuatannya yang besar, tidak ragu untuk memerintah Chandler, 
+                        seperti yang ditunjukkan ketika dia dengan tegas mengatakan kepadanya bahwa dia tidak akan mendengar keberatan apa pun dari Chandler untuk membawa Elizabeth 
+                        bersamanya dan kemudian tidak ragu untuk membungkamnya ketika dia mencoba membalas tuduhan ketidakmampuan Cusack.
+                    </p>
+                    <a href="https://nanatsu-no-taizai.fandom.com/wiki/Demon_King" target="_blank">Raja Iblis (Ayah Meliodas)</a>
+                    <p>
+                        Awalnya, Meliodas tampak lebih disukai oleh Raja Iblis daripada saudara-saudaranya, dengan Raja Iblis menganggapnya sebagai satu-satunya pewaris takhta Klan Iblis yang layak.
+                        Meliodas sendiri pada awalnya cukup berbakti kepada ayahnya, karena emosinya kemudian mengatakan bahwa meskipun ia menganggap perang antara Klan Iblis dan Dewi sebagai hal yang 
+                        bodoh, ia tetap melaksanakan tugasnya dengan penuh takdir, bertempur setiap hari siang dan malam. Namun, setelah jatuh cinta pada Elizabeth, ia akhirnya mengkhianati Raja Iblis, 
+                        kehilangan kesetiaan kepada ayahnya dan membuat Raja marah. Saat Meliodas terus menerus menentang ayahnya dan hukum Klan Iblis, Raja Iblis menjadi sangat marah dengan tindakan 
+                        Meliodas terhadap klannya sehingga dia akhirnya memilih untuk secara pribadi menghadapi Meliodas dan Meliodas sendiri berjuang untuk membunuh tetapi mencoba semampunya, dia bukan 
+                        tandingan ayahnya yang sangat kuat dan Raja Iblis pertama-tama dengan brutal memukulinya hingga berdarah-darah sebelum dia dengan kejam membunuhnya dan mengutuknya dengan 
+                        Keabadian, menderita hukuman ayahnya yang mengerikan, yaitu dia dan Elizabeth terpisah karena Kutukan Dewa Tertinggi.
+                    </p>
+                    <p>
+                        Sejak saat itu, Meliodas sangat membenci Raja Iblis dan sementara Raja Iblis masih menyimpan dendam bahkan berabad-abad setelahnya, kebencian Meliodas jauh lebih besar dan tetap kuat 
+                        seperti sebelumnya. Meskipun ada ketegangan dan permusuhan di antara mereka, emosi Meliodas ironisnya pernah memanggil Raja Iblis Ayah, menyiratkan bahwa ia masih mengakuinya sebagai 
+                        ayahnya meskipun semua yang terjadi di antara mereka sampai batas tertentu tetapi ia sepenuhnya bersedia untuk menyangkal ini, seperti yang ditunjukkan dengan bagaimana ia dengan dingin 
+                        mengatakan kepada Raja bahwa ia tidak lagi menganggapnya sebagai ayahnya.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./assets/img/logo/white-logo.png" alt="Dragon Sin's">
+            </div>
+            <div class="footer-socials">
+                <span>Follow Me</span>
+                <a id="fb" href="https://www.facebook.com/handayogi.tambunan/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a id="twt" href="https://www.twitter.com/zzyvnxx/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a id="ig" href="https://www.instagram.com/yogiitmbnn_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a id="gh" href="https://github.com/handayogi/" target="_blank"><i class="fab fa-github"></i></a>
+                <a id="in" href="https://www.linkedin.com/in/handayogitambunan/"><i class="fab fa-linkedin-in"></i></a>
+                <a id="yt" href="https://www.youtube.com/@zyggz" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>

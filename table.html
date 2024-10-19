@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png/img" href="./assets/img/logo/red-logo.png">
+    <title>List Data</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    
+    <!-- Bootstrap Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./static/tablepage.css">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+    <!-- Header dan Logo -->
+    <header itemscope itemtype="https://schema.org/Organization" class="d-flex justify-content-center">
+        <img src="./assets/img/logo/red-logo.png" alt="Logo" width="60" height="60">
+        <h2>Meliodas Wiki</h2>
+    </header>
+
+    <div class="row">
+        <!-- Sidebar kiri halaman -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Form</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="table.html">
+                        <i class="fas fa-list"></i>
+                        <span>List Data</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="container">
+        <h2>Dummy Data</h2>
+
+        <!-- Mesin pencari data dalam tabel -->
+        <form>
+            <div class="mb-3">
+                <input class="form-control" type="text" placeholder="Search for name" onkeyup="searchTable()" id="searchInput" aria-describedby="searchHelp">
+                <div id="searchHelp" class="form-text">Search for name in the table.</div>
+            </div>
+        </form>
+
+        <!-- Tabel Data -->
+         <div class="table-container">
+            <table class="dummy-table-data" id="tabel-data">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data Dummy -->
+                    <tr>
+                        <td>1</td>
+                        <td>Meliodas</td>
+                        <td>meliodas@example.com</td>
+                        <td>password123</td>
+                        <td>03/10/100</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Elizabeth</td>
+                        <td>QG2Z8@example.com</td>
+                        <td>password456</td>
+                        <td>10/10/100</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Hawk</td>
+                        <td>Yi0pM@example.com</td>
+                        <td>password789</td>
+                        <td>20/02/2002</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Merlin</td>
+                        <td>B0s1t@example.com</td>
+                        <td>password789</td>
+                        <td>02/05/100</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Escanor</td>
+                        <td>K3dj9@example.com</td>
+                        <td>password100</td>
+                        <td>24/10/1987</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>King</td>
+                        <td>mhZU5@example.com</td>
+                        <td>password101</td>
+                        <td>09/09/1990</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ban</td>
+                        <td>q4YpR@example.com</td>
+                        <td>password102</td>
+                        <td>11/11/1992</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Diane</td>
+                        <td>zZo5D@example.com</td>
+                        <td>password103</td>
+                        <td>12/12/1993</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Gowther</td>
+                        <td>YbW6Q@example.com</td>
+                        <td>password104</td>
+                        <td>13/01/100</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>James Taylor</td>
+                        <td>WD20mE@example.com</td>
+                        <td>password105</td>
+                        <td>14/02/1995</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Olivia Anderson</td>
+                        <td>QgGf8@example.com</td>
+                        <td>password106</td>
+                        <td>15/03/1996</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Benjamin Thomas</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password107</td>
+                        <td>16/04/1997</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Ava Jackson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password108</td>
+                        <td>17/05/1998</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Lucas Martinez</td>
+                        <td>9m9bK@example.com</td>
+                        <td>password109</td>
+                        <td>18/06/1999</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Mia Jackson</td>
+                        <td>K2OSM9@example.com</td>
+                        <td>password110</td>
+                        <td>20/08/1975</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Emma Wilson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password111</td>
+                        <td>21/09/1976</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Henry Anderson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password112</td>
+                        <td>22/10/1977</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Amelia Jackson</td>
+                        <td>p3Jd9@example.com</td>
+                        <td>password113</td>
+                        <td>05/01/1975</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Isabella Taylor</td>
+                        <td>WD20mE@example.com</td>
+                        <td>password114</td>
+                        <td>06/02/1976</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Olivia Wilson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password115</td>
+                        <td>07/03/1977</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Lucas Anderson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password116</td>
+                        <td>08/04/1978</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Mia Wilson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password117</td>
+                        <td>09/05/1979</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Henry Jackson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password118</td>
+                        <td>10/06/1980</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>Amelia Taylor</td>
+                        <td>WD20mE@example.com</td>
+                        <td>password119</td>
+                        <td>11/07/1981</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>Isabella Anderson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password120</td>
+                        <td>12/08/1982</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>Olivia Jackson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password121</td>
+                        <td>13/09/1983</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Lucas Wilson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password122</td>
+                        <td>14/10/1984</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>Mia Anderson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password123</td>
+                        <td>15/11/1985</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>Henry Wilson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password124</td>
+                        <td>16/12/1986</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>Amelia Jackson</td>
+                        <td>WD20mE@example.com</td>
+                        <td>password125</td>
+                        <td>17/01/1987</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>Isabella Anderson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password126</td>
+                        <td>18/02/1988</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>Olivia Wilson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password127</td>
+                        <td>19/03/1989</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>Lucas Anderson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password128</td>
+                        <td>20/04/1990</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>Mia Jackson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password129</td>
+                        <td>21/05/1991</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>Henry Anderson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password130</td>
+                        <td>22/06/1992</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>Amelia Wilson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password131</td>
+                        <td>23/07/1993</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>Isabella Jackson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password132</td>
+                        <td>24/08/1994</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>Olivia Anderson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password133</td>
+                        <td>25/09/1995</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>Lucas Wilson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password134</td>
+                        <td>26/10/1996</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>Mia Anderson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password135</td>
+                        <td>27/11/1997</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>Handayogi Tambunan</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password136</td>
+                        <td>28/12/1998</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>Amelia Jackson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password137</td>
+                        <td>29/01/1999</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>Isabella Anderson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password138</td>
+                        <td>30/02/2000</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>Olivia Wilson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password139</td>
+                        <td>31/03/2001</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>Lucas Jackson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password140</td>
+                        <td>01/04/2002</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>46</td>
+                        <td>Mia Wilson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password141</td>
+                        <td>02/05/2003</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>47</td>
+                        <td>Henry Jackson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password142</td>
+                        <td>03/06/2004</td>
+                        <td>Pria</td>
+                    </tr>
+                    <tr>
+                        <td>48</td>
+                        <td>Amelia Anderson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password143</td>
+                        <td>04/07/2005</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>49</td>
+                        <td>Isabella Wilson</td>
+                        <td>5YHkR@example.com</td>
+                        <td>password144</td>
+                        <td>05/08/2006</td>
+                        <td>Wanita</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>Olivia Jackson</td>
+                        <td>qG9wW@example.com</td>
+                        <td>password145</td>
+                        <td>06/09/2007</td>
+                        <td>Wanita</td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+    </div>
+
+    <!-- Script untuk mesin pencari menggunakan javascript function -->
+    <script>
+        function searchTable() {
+            // Mengambil input dari mesin pencari
+            var input = document.getElementById("searchInput").value.toLowerCase();
+
+            // Mengambil semua baris dari tabel
+            var table = document.getElementById("tabel-data");
+            var tr = table.getElementsByTagName("tr");
+
+            // Cek jika input kosong, maka tampilkan semua isi tabel
+            if (input == "") {
+                for (var i = 1; i < tr.length; i++) {
+                    tr[i].style.display = "";
+                }
+                return;
+            }
+
+            // Fungsi untuk looping ke setiap row dari tabel, kecuali table header
+            for (var i = 1; i < tr.length; i++) {
+                var td = tr[i].getElementsByTagName("td")[1];
+                // Fungsi untuk memeriksa apakah ada kata yang sesuai dengan input pencarian
+                if (td) {
+                    var txtValue = td.textContent || td.innerText;
+
+                    // Jika input kosong, tampilkan semua row
+                    if (txtValue.toLowerCase().indexOf(input) > -1) {
+                        tr[i].style.display = ""; // Menampilkan row tabel
+                    } else {
+                        tr[i].style.display = "none"; // Menyembunyikan row
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./assets/img/logo/white-logo.png" alt="Dragon Sin's">
+            </div>
+            <div class="footer-socials">
+                <span>Follow Me</span>
+                <a id="fb" href="https://www.facebook.com/handayogi.tambunan/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a id="twt" href="https://www.twitter.com/zzyvnxx/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a id="ig" href="https://www.instagram.com/yogiitmbnn_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a id="gh" href="https://github.com/handayogi/" target="_blank"><i class="fab fa-github"></i></a>
+                <a id="in" href="https://www.linkedin.com/in/handayogitambunan/"><i class="fab fa-linkedin-in"></i></a>
+                <a id="yt" href="https://www.youtube.com/@zyggz/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
